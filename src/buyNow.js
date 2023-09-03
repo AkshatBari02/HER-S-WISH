@@ -36,17 +36,17 @@ function BuyNow() {
       {product ? (
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 col-md-4 col-sm-4">
+            <div className="col-8">
               <div class="card mb-3" style={{ maxWidth: "90%" }}>
                 <div class="row g-0">
-                  <div class="col-md-6">
+                  <div class="col-6">
                     <img
                       src={product.img}
                       class="img-fluid rounded-start"
                       alt="..."
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-6">
                     <div class="card-body">
                       <h1 class="card-title">{product.head}</h1>
                       <p
@@ -77,7 +77,7 @@ function BuyNow() {
                         style={{ textDecoration: "none", color: "white" }}
                       >
                         <button
-                          className="ntn btn-primary"
+                          className="btn btn-primary"
                           style={{ padding: "0.2rem 5rem" }}
                         >
                           Place Order
@@ -89,7 +89,7 @@ function BuyNow() {
               </div>
             </div>
             <div
-              className="col-lg-4 col-md-2 col-sm-2 "
+              className="col-4"
               style={{ marginLeft: "-100px" }}
             >
               <img

@@ -19,7 +19,7 @@ function ConfirmOrderForm() {
     <>
         <div className="container finaldetails-container">
           <div className="row">
-            <div className="col-lg-6 col-md-4 col-sm-4">
+            <div className="col-6">
               <div className="finaldetails-content">
                 <h2>Confirm Order</h2><br/>
                 <form style={{ width: "50%" }}>
@@ -54,7 +54,7 @@ function ConfirmOrderForm() {
                 </form>
               </div>
             </div>
-            <div className="col-lg-6 col-md-4 col-sm-4">
+            <div className="col-6">
               <div style={{marginLeft:"-141px"}}>
                 <img
                   src={require(`./additional images/confirmOrder.jpg`)}

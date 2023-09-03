@@ -118,6 +118,22 @@ function NavComp() {
     });
   }, []);
 
+  const handleViewCart = () => {
+    if (!isLoggedIn) {
+      // If the user is not logged in, display an alert and do not add the item to the cart
+      alert("Please log in to view your cart.");
+      return;
+    }
+  }
+
+  const handleViewWishlist = () => {
+    if (!isLoggedIn) {
+      // If the user is not logged in, display an alert and do not add the item to the cart
+      alert("Please log in to view your wishlist.");
+      return;
+    }
+  }
+
   const handleLogout = () => {
       console.log("Logout successful");
       setLoggedIn(false);
@@ -214,13 +230,26 @@ function NavComp() {
                     />)}
               </button>
               <Link to={isLoggedIn ? "/addtowishlist" : ""}>
-              <button type="button" className="wishlist-icon">
-                <img
-                  src={require(`./Navbar images/wishlist.png`)}
-                  alt="wishlist"
-                  title="wishlist"
-                />
-              </button>
+                {isLoggedIn?(
+                  <button type="button" className="wishlist-icon">
+                  <img
+                    src={require(`./Navbar images/wishlist.png`)}
+                    alt="wishlist"
+                    title="wishlist"
+                  />
+                </button>
+                ):(
+                  <button type="button" className="wishlist-icon">
+                  <img
+                    src={require(`./Navbar images/wishlist.png`)}
+                    alt="wishlist"
+                    title="wishlist"
+                    onClick={handleViewWishlist}
+                  />
+                </button>
+                )
+                }
+              
               </Link>
             </ul>
           </div>
@@ -295,13 +324,23 @@ function NavComp() {
 
       {/* Cart */}
       <Link to={isLoggedIn ? "/addtocart" : ""}>
+        {isLoggedIn? (
         <button type="button" className="cart-btn">
           <img
             src={require(`./Navbar images/shopping-cart.png`)}
             alt=""
             title="Cart"
           />
+        </button>):(
+          <button type="button" className="cart-btn">
+          <img
+            src={require(`./Navbar images/shopping-cart.png`)}
+            alt=""
+            title="Cart"
+            onClick={handleViewCart}
+          />
         </button>
+        )}
       </Link>
     </>
   );

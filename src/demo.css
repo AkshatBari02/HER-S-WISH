@@ -1,0 +1,21 @@
+/* TrendingBlock.css */
+.small-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .left-small-arrow {
+    left: 0;
+  }
+  
+  .right-small-arrow {
+    right: 0;
+  }
+  

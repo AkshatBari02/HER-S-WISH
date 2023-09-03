@@ -288,7 +288,7 @@ function NavComp() {
             </div>
             {/* <!-- Create Account Form Fields --> */}
             <div className="create-account-fields">
-              <input type="email" name="signupEmail" placeholder="Email" />
+              <input type="email" name="signupEmail" placeholder="Email"/>
               <input
                 type="password"
                 name="signupPassword"

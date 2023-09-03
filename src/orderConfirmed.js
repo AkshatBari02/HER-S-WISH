@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function OrderConfirmed(){
     return(
         <>
@@ -6,6 +8,7 @@ function OrderConfirmed(){
             <div className="order-confirmed-card centered">
       <h3>Order Confirmed</h3>
       <p>Your order has been confirmed. Thank you for shopping with us!</p>
+      <Link to="/"><button type="submit" class="btn btn-primary" style={{fontSize:"20px"}}>Continue Shopping</button></Link><br/>
     </div>
     </div>
         </>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function HomeFooter(){
     return(
         <>
@@ -60,22 +62,22 @@ function HomeFooter(){
           Products
         </h6>
         <p>
-          <a href="#!" class="text-reset">Kurtis|Suits</a>
+          <Link to="/kurtis" class="text-reset">Kurtis|Suits</Link>
         </p>
         <p>
-          <a href="#!" class="text-reset">Indo-Western</a>
+          <Link to="/indo-western" class="text-reset">Indo-Western</Link>
         </p>
         <p>
-          <a href="#!" class="text-reset">Dresses</a>
+          <Link to="/dresses" class="text-reset">Dresses</Link>
         </p>
         <p>
-          <a href="#!" class="text-reset">Kids Wear</a>
+          <Link to="/kids-wear" class="text-reset">Kids Wear</Link>
         </p>
         <p>
-          <a href="#!" class="text-reset">Specials</a>
+          <Link to="/specials" class="text-reset">Specials</Link>
         </p>
         <p>
-          <a href="#!" class="text-reset">Home & Furnishing</a>
+          <Link to="/home & furnishing" class="text-reset">Home & Furnishing</Link>
         </p>
       </div>
       {/* <!-- Grid column --> */}

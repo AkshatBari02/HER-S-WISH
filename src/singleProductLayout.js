@@ -97,28 +97,27 @@ function SingleProduct(props) {
 
   return (
     <div
-      class="container mb-5"
-      style={{ paddingTop: "120px", backgroundColor: "bisque" }}
+      class="container mb-5 single-product-card"
     >
       <div class="row d-flex justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-10 ">
           <div class="card">
-            <div class="row">
-              <div class="col-md-6">
+            <div class="row spp">
+              <div class="col-md-6 col-12">
                 <div class="images p-3">
                   <div class="text-center p-4">
                     
                     <img
                       src={props.img}
                       alt="product"
-                      width="100%"
-                      height={"100%"}
+                      width="90%"
+                      height={"80%"}
                       className="zoom"
                     />
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 col-12">
                 <div class="product p-4">
                   <button
                     type="button"
@@ -132,12 +131,12 @@ function SingleProduct(props) {
                   >
                     <i class="fa fa-heart text-muted" title="Add to Wishlist"></i>
                   </button>
-                  <div class="mt-4 mb-3" style={{ paddingTop: "40px" }}>
+                  <div class="mt-4 mb-3 sp-details">
                     
-                    <span class="text-uppercase text-muted brand">
+                    <span class="text-uppercase text-muted brand sp-head">
                       <b>{props.title}</b>
                     </span>
-                    <h5 class="text-uppercase">{props.description}</h5>
+                    <h5 class="text-uppercase sp-description">{props.description}</h5>
                     <div class="price d-flex flex-row align-items-center">
                       
                       <span
@@ -195,6 +194,7 @@ function SingleProduct(props) {
                       <span>XXL</span>
                     </label>
                   </div>
+                  <div className="sp-btns">
                   <Link to={username ? `/buynow/${props.id}` : ""}>
                     <div class="cart mt-4 align-items-center">
                       {username ? (
@@ -212,13 +212,13 @@ function SingleProduct(props) {
                     </div>
                   </Link>
                   <div class="cart mt-4 align-items-center">
-                    
                     <button
                       class="btn btn-danger text-uppercase mr-2 px-4"
                       onClick={handleAddToCart}
                     >
                       Add to cart
                     </button>
+                  </div>
                   </div>
                 </div>
               </div>

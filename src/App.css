@@ -18,7 +18,7 @@ body {
 .navbar {
   position: fixed;
   font-size: 20px;
-  padding: 20px 0px;
+  padding: 0px 0px;
   background-color: rgb(255, 255, 255);
   position: fixed-top;
   padding-left: 0px;
@@ -60,7 +60,7 @@ body {
 .qumash-logo {
   padding: 5px;
   height: 76px;
-  width: 174px;
+  width: 140px;
 }
 .search-form {
   height: 40px;
@@ -118,29 +118,8 @@ body {
   height: 30px;
   width: 30px;
 }
-.myorder-btn {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 9999; /* Ensure it's above other content */
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-}
-.myorder-btn img {
-  height: 30px;
-  width: 30px;
-}
+
 .cart-btn:hover {
-  height: 60px;
-  width: 60px;
-}
-.myorder-btn:hover {
   height: 60px;
   width: 60px;
 }
@@ -202,7 +181,7 @@ hr {
 }
 .deals-header {
   text-align: center;
-  padding: 30px;
+  padding: 15px;
   background: url(./deals\ images/deals-bg.jpeg) no-repeat center;
   background-size: cover;
   margin-top: 10px;
@@ -222,11 +201,9 @@ hr {
 .deals {
   padding: 0px 20px;
 }
-/* .deals-col-border {
-    border: 2px solid black;
-} */
+
 .deals-img {
-  height: 200px;
+  height: 210px;
 }
 .deals hr {
   color: black;
@@ -251,10 +228,9 @@ hr {
 }
 .rb-header {
   text-align: center;
-  padding: 30px;
+  padding: 15px;
   background: url(./Rakhi\ images/rb-bg.png) no-repeat center center/cover;
   background-color: rgba(0, 0, 0, 0.1);
-  /* opacity: 0.70;  */
   background-size: 500px;
   margin-top: 20px;
 }
@@ -278,11 +254,8 @@ hr {
 .rb {
   padding: 0px 20px;
 }
-/* .rb-col-border{
-    border: 2px solid black;
-} */
 .rb-img {
-  height: 200px;
+  height: 210px;
 }
 .rb-span {
   font-size: 16px;
@@ -298,7 +271,7 @@ hr {
 /* Top Brands */
 .brand-header {
   text-align: center;
-  padding: 30px;
+  padding: 15px;
   background: url(./Brands\ images/brands-bg.png) no-repeat center;
   background-size: cover;
   margin-top: 20px;
@@ -317,15 +290,12 @@ hr {
 .brands {
   padding: 0px 20px;
 }
-/* .brands-col-border{
-  border: 2px solid black;
-} */
 .brands-img {
-  height: 200px;
+  height: 210px;
 }
 .brands-logo {
-  height: 40px;
-  width: 90px!important;
+  height: 50px;
+  width: 80px!important;
 }
 .brands hr {
   color: black;
@@ -337,7 +307,7 @@ hr {
 /* trending now */
 .trend-header {
   text-align: center;
-  padding: 30px;
+  padding: 15px;
   background: url(./Trending\ images/trending-bg.png) no-repeat center;
   background-size: cover;
   margin-top: 20px;
@@ -357,11 +327,9 @@ hr {
 .trend {
   padding: 0px 20px;
 }
-/* .trend-col-border{
-  border: 2px solid black;
-} */
+
 .trend-img {
-  height: 200px;
+  height: 210px;
 }
 .trend hr {
   color: black;
@@ -463,6 +431,26 @@ hr {
 }
 
 /* Card-Layout Styling */
+.card-row{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.card-head{
+  font-size: 20px;
+}
+.card-price{
+  font-size: 18px;
+}
+.card-strike{
+  color:red;
+  font-size:14px;
+  padding:5px 3px;
+}
+/* .card-layout-img{
+  width:70% !important;
+  height:300px !important;
+  margin-left:30px !important;
+} */
 .prod-card:hover {
   box-shadow: 12px 12px 20px gray;
   background-color: bisque;
@@ -470,7 +458,7 @@ hr {
   transition: transform 0.5s ease-in-out;
 }
 .zoom:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   cursor: zoom-in;
 }
 
@@ -492,6 +480,22 @@ hr {
   font-family: fantasy;
 }
 
+/* kurti page */
+.single-category-section{
+  padding-top: 120px;
+  padding-left: 6rem;
+  background-color: #f9efdf;
+}
+
+/* single product page */
+.single-product-card{
+  padding-top: 80px; 
+  background-color: bisque;
+  padding-bottom: 2px;
+}
+.sp-details{
+  padding-top: 40px;
+}
 /* Wishlist */
 .wishlist-head{
   background: url(./additional\ images/wishlist-bg-2.jpg) no-repeat center center/cover;
@@ -512,11 +516,25 @@ hr {
 
 /* Buy Now */
 .buynow-cardimg{
-  height:97%;
+  height:96%;
   width:122%;
   border-top:1px solid #e9e1e1;
   border-bottom:1px solid #e9e1e1;
   border-right:1px solid #e9e1e1;
+}
+.buynow-card{
+  padding: 10vw;
+  padding-bottom:0;
+}
+.buynow-price{
+  font-weight: bold;
+  font-size: 2vw;
+}
+.buynow-total{
+  font-size: 1.5vw;
+}
+.mt-3{
+  margin-top: 3rem !important;
 }
 
 /* Confirm Order Form */
@@ -532,6 +550,9 @@ hr {
   justify-content:center;
   flex-direction:column;
 }
+.confirm-order-btn{
+  padding:0.4rem 13.4rem;
+}
 /* order Confirmed Message */
 .msg-container {
   position: relative;
@@ -539,13 +560,310 @@ hr {
   color: white;
   padding-top: 10vw;
 }
-/* .order-confirmed-card{
-  padding-top: 15vw;
-  text-align: center;
-} */
+.order-confirmed-img{
+  border-radius:50%;
+}
+
 .centered {
   position: absolute;
   top: 77%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.continue-shopping-btn{
+  font-size: 20px;
+}
+
+/* Wishlist & Cart Page */
+.cart-li,.wishlist-li{
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+.cart-card,.wishlist-card{
+  flex-direction: row;
+}
+.cart-card-img,.wishlist-card-img{
+  width: 10vw;
+  height: 15vw;
+}
+.cart-placeOrder-btn{
+  padding:1rem 20rem;
+  border-radius:2rem;
+}
+
+
+@media screen and (max-width:768px) {
+  .navbar-toggler{
+    padding: 2px !important;
+    margin-right: 5px;
+  }
+  .qumash-logo{
+    height: 55px;
+    width: 100px;
+  }
+  .navbar{
+    padding: 0px !important;
+  }
+  .section{
+    height: 30rem !important;
+  }
+  .hide{
+    display: none;
+  }
+  .heading4{
+    font-size: 1.2rem !important;
+  }
+  .deals-img{
+    height: 180px;
+  }
+  .deals-header{
+    padding: 2px;
+  }
+  .deals-span{
+    font-size: 12px !important;
+  }
+  .deals-price{
+    font-size: 15px;
+  }
+  .deals-strike{
+    font-size: 10px;
+  }
+
+  .rb-img{
+    height: 180px;
+  }
+  .rb-header{
+    padding: 0px;
+  }
+  .rb-span{
+    font-size: 12px !important;
+  }
+  .rb-price{
+    font-size: 15px;
+  }
+  .rb-strike{
+    font-size: 10px;
+  }
+
+  .brand-header{
+    padding: 0px !important;
+  }
+  .brands-img{
+    height: 180px;
+  }
+  .brands-logo {
+    height: 45px;
+    width: 60px !important;
+  }
+
+  .trend-header{
+    padding: 5px !important;
+  }
+  .trend-span{
+    font-size: 12px !important;
+  }
+  .trend-price{
+    font-size: 15px;
+  }
+  .trend-strike{
+    font-size: 10px;
+  }
+  .trend-img{
+    height: 180px;
+  }
+  .card-details{
+    font-size: 10px !important;
+  }
+  .card-head{
+    font-size: 12px;
+  }
+  .card-price{
+    font-size: 12px;
+  }
+  .card-strike{
+    color:red;
+    font-size:10px;
+    padding:5px 3px;
+  }
+  .card-layout-img{
+    /* width:90% !important; */
+    height:180px !important;
+    /* margin-left:2px !important; */
+  }
+  .css-46bh2p-MuiCardContent-root {
+    padding: 0px !important;
+  }
+  .single-category-section{
+    padding-top: 50px !important;
+    padding-left: 0px ;
+  }
+  ul{
+    font-size: 0.8rem;
+  }
+  .search-form {
+    width: 360px;
+    margin-left: 1px;
+}
+  .user-icon{
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    background: none;
+    padding-top: 9px;
+    padding-left: 2px !important;
+  }
+  .wishlist-icon {
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    background: none;
+    padding-left: 0;
+  }
+  .single-product-card{
+    padding-top: 55px; 
+    background-color: bisque;
+  }
+  .zoom{
+    width: 45%;
+  }
+  .spp{
+    padding-bottom: 1rem;
+  }
+  .p-4{
+    padding: 0 5px !important;
+  }
+  .p-3{
+    padding: 0 !important;
+  }
+  .sp-details{
+    padding-top: 5px;
+  }
+  .sp-head{
+    font-size: 1.5rem;
+  }
+  .sp-description{
+    font-size: 1rem;
+  }
+  .mt-5{
+    margin-top: 0 !important;
+  }
+  .sp-btns{
+    display: flex;
+    padding: 0 11px;
+    justify-content: space-between;
+  }
+
+  .buynow-card{
+    padding: 13vw 0 0 8vw;
+    padding-bottom:0;
+  }
+  .buyNow-card-body{
+    padding: 0 !important;
+  }
+  .card-title {
+    margin-bottom: 0 !important;
+    font-size: 1.5rem !important;
+  }
+  .buynow-price{
+    font-weight: bold;
+    font-size: 4vw;
+  }
+  .buynow-total{
+    font-size: 4.5vw;
+  }
+  .place-order-btn{
+    padding: 0.2rem 6.169rem;
+  }
+  .confirm-order-btn{
+    padding:0.4rem 7.5rem;
+  }
+  .confirm-order-head{
+    padding: 1rem 4rem;
+  }
+  .left-box{
+    background: url("./additional images/confirmOrder.jpg");
+  }
+  .msg-container{
+    padding-left: 0 !important;
+  }
+  .order-confirmed-img{
+    border-radius: 0%; 
+    height: 33.6rem;
+    width: 30rem;
+    margin-left: -22px;
+  }
+  .centered{
+    position: absolute;
+    top: 53%;
+    left: 0%;
+    transform: translate(7%, 0%);
+  }
+  .centered p{
+    padding-right: 21px;
+  }
+  .continue-shopping-btn{
+    font-size: 14px;
+  }
+  .cont{
+    padding-top: 3px;
+  }
+  .cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Ensure it's above other content */
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .cart-btn img {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .cart-btn:hover {
+    height: 60px;
+    width: 60px;
+  }
+  .cart-cardholder,.wishlist-cardholder{
+    display: block;
+  }
+  .cart-li,.wishlist-li{
+    width: auto;
+    margin: 5px 0px;
+  }
+  .cart-card,.wishlist-card{
+    flex-direction: row;
+    width: 22rem;
+  }
+  .cart-card-img,.wishlist-card-img{
+    width: 26vw;
+    height: 41vw;
+  }
+  .cart-card-body,.wishlist-card-body{
+    padding: 0 5px !important;
+  }
+  .wishlist-btn{
+    padding: 0.1rem 0.3rem;
+  }
+  .cart-title,.wishlist-title {
+    font-size: 8vw;
+    font-family: fantasy;
+  }
+  .cart-head,.wishlist-head{
+    padding: 50px;
+    padding-bottom: 8px;
+  }
+  .cart-card-btn{
+    padding: 2px 10px;
+  }
+  .cart-placeOrder-btn{
+    padding:1rem 8.15rem;
+  }
 }

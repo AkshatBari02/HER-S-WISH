@@ -15,7 +15,6 @@ function Home() {
       <RakhiBlock/>
       <BrandsBlock/>
       <TrendingBlock/>
-      {/* <Gallery/> */}
       </div>
   );
 }

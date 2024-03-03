@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
 import CardLayout from "./card-layout";
-import DressesData from "./dresses-Data";
+import Data from "./allProductDetails";
 
 
 function Dresses() {
+  const filteredData = Data.filter(item => item.id.includes("dress"));
   return (
     
-    <div style={{ paddingTop: "120px", backgroundColor: "#f9efdf" }}>
-      <CardLayout data={DressesData} />
+    <div className="single-category-section">
+      <CardLayout data={filteredData} />
     </div>
   );
 }

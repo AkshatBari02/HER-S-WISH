@@ -1,11 +1,11 @@
+import Data from "./allProductDetails";
 import CardLayout from "./card-layout";
-import SpecialsData from "./specials-data";
-
 
 function Specials() {
+  const filteredData = Data.filter(item => item.id.includes("special"));
   return (
-    <div style={{ paddingTop: "120px", backgroundColor: "#f9efdf" }}>
-      <CardLayout data={SpecialsData} />
+    <div className="single-category-section">
+      <CardLayout data={filteredData} />
     </div>
   );
 }

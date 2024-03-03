@@ -51,38 +51,39 @@ function AddtoWishlist() {
           {userWishlist.map((item) => (
             <li
               key={item.id}
-              style={{ width: "calc(50% - 10px)", margin: "5px" }}
+              className="wishlist-li"
             >
-              <div class="card" style={{ flexDirection: "row" }} key={item.id}>
+              <div class="card wishlist-card" style={{ flexDirection: "row" }} key={item.id}>
                 <Link to={`/product/${item.id}`}>
                   <img
                     src={item.img}
-                    class="card-img"
+                    class="card-img wishlist-card-img"
                     alt={item.title}
-                    style={{ width: "10vw", height: "15vw" }}
                   />
                 </Link>
-                <div class="card-body">
+                <div class="card-body wishlist-card-body">
                   <h5 class="card-title">{item.title}</h5>
                   <p class="card-text">{item.description}</p>
                   <h6>₹{item.price}/-</h6>
                   <br />
-                  <button className="btn btn-success">Buy Now</button>
+                  <div style={{display:"flex",justifyContent:"space-between"}}>
+                  <Link to={`/buynow/${item.id}`}>
+                  <button className="btn btn-success wishlist-btn">Buy Now</button>
+                  </Link>
                   <button
-                    className="btn btn-primary"
+                    className="btn btn-primary wishlist-btn"
                     onClick={() => handleAddToCart}
-                    style={{ marginLeft: "1vw" }}
                   >
                     Add to Cart
                   </button>
-                  <Link to={`/buynow/${item.id}`}></Link>
+                  
                   <button
                     onClick={() => handleRemoveFromWishlist(item.id)}
-                    className="btn btn-danger"
-                    style={{ marginLeft: "1vw" }}
+                    className="btn btn-danger wishlist-btn"
                   >
                     Remove
                   </button>
+                  </div>
                 </div>
               </div>
             </li>

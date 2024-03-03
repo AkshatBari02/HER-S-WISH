@@ -91,17 +91,17 @@ function AddtoCart() {
       </div>
       <ul className='cart-cardholder'>
         {userCart.map((item) => (
-          <li key={item.id} style={{ width: "calc(50% - 10px)", margin: "5px" }}>
-          <div class="card" style={{flexDirection:"row"}} key={item.id}>
+          <li key={item.id} className='cart-li'>
+          <div class="card cart-card" key={item.id}>
             <Link to={`/product/${item.id}`}>
-            <img src={item.img} class="card-img" alt={item.title} style={{width:"10vw", height:"15vw"}}/>
+            <img src={item.img} class="card-img cart-card-img" alt={item.title} />
             </Link>
-            <div class="card-body">
+            <div class="card-body cart-card-body">
               <h5 class="card-title">{item.title}</h5>
               <p class="card-text">
                 {item.description}
               </p>
-              <h6>{item.price}</h6>
+              <h6>{item.price}/-</h6>
               {/* Step 2: Add a quantity input field */}
               <label htmlFor={`quantity-${item.id}`}>Quantity:</label>
                   <input
@@ -113,7 +113,7 @@ function AddtoCart() {
                   /><br/>
               <button
                 onClick={() => handleRemoveFromCart(item.id)}
-                className="btn btn-danger"
+                className="btn btn-danger cart-card-btn"
               >
                 Remove
               </button>
@@ -128,7 +128,7 @@ function AddtoCart() {
     <h5 style={{textAlign:"center"}}><b style={{color:"crimson"}}>Total Amount:  </b>₹{calculateTotalPrice()}/-</h5><br/>
     <div style={{display:"flex",justifyContent:"center"}}>
       <Link to="/confirm" style={{textDecoration:"none",color:"white"}}>
-    <button className='btn btn-primary' style={{padding:"1rem 20rem",borderRadius:"2rem"}}>Place Order</button>
+    <button className='btn btn-primary cart-placeOrder-btn'>Place Order</button>
     </Link>
     </div>
     </div>

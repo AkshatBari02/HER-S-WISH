@@ -44,7 +44,7 @@ function HomeFooter(){
     {/* <!-- Grid row --> */}
     <div class="row mt-3">
       {/* <!-- Grid column --> */}
-      <div class="col-md-3 col-lg-4 col-xl-3 col-sm-3 mx-auto mb-4">
+      <div class="col-md-3 col-lg-4 col-xl-3 col-sm-2 mx-auto mb-4">
         {/* <!-- Content --> */}
         <h6 class="text-uppercase fw-bold mb-4">
           <i class="fas fa-gem me-3"></i>Qumash World
@@ -56,7 +56,7 @@ function HomeFooter(){
       {/* <!-- Grid column --> */}
 
       {/* <!-- Grid column --> */}
-      <div class="col-md-2 col-lg-2 col-xl-2 col-sm-2 mx-auto mb-4">
+      <div class="col-md-2 col-lg-2 col-xl-2 col-sm-2 mx-auto mb-4 hide">
         {/* <!-- Links --> */}
         <h6 class="text-uppercase fw-bold mb-4">
           Products

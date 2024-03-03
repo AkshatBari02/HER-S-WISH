@@ -1,10 +1,11 @@
-import indoWesternData from "./indo-westernData";
 import CardLayout from "./card-layout";
+import Data from "./allProductDetails";
 
 function IndoWestern() {
+  const filteredData = Data.filter(item => item.id.includes("indo"));
   return (
-    <div style={{ paddingTop: "120px", backgroundColor: "#f9efdf" }}>
-      <CardLayout data={indoWesternData} />
+    <div className="single-category-section">
+      <CardLayout data={filteredData} />
     </div>
   );
 }

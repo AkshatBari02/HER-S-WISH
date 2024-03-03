@@ -32,32 +32,31 @@ function BuyNow() {
   };
 
   return (
-    <div style={{ padding: "10vw",paddingBottom:"0" }}>
+    <div className="buynow-card">
       {product ? (
         <div className="container">
           <div className="row">
-            <div className="col-8">
+            <div className="col-lg-8 col-md-12 col-sm-12 col-12">
               <div class="card mb-3" style={{ maxWidth: "90%" }}>
                 <div class="row g-0">
-                  <div class="col-6">
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                     <img
                       src={product.img}
                       class="img-fluid rounded-start"
                       alt="..."
                     />
                   </div>
-                  <div class="col-6">
-                    <div class="card-body">
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="buyNow-card-body card-body">
                       <h1 class="card-title">{product.head}</h1>
                       <p
-                        class="card-text"
-                        style={{ fontWeight: "bold", fontSize: "2vw" }}
+                        class="card-text buynow-price"
                       >
                         ₹{product.price}/-
                       </p>
-                      <label>
-                        <br />
-                        <br />
+                      <label className="mt-3">
+                        {/* <br />
+                        <br /> */}
                         <b>Quantity:</b>
                         <input
                           type="number"
@@ -66,9 +65,8 @@ function BuyNow() {
                           min={1}
                         />
                       </label>
-                      <br />
                       <hr />
-                      <p style={{ fontSize: "1.5vw" }}>
+                      <p className="buynow-total">
                         <b style={{ color: "crimson" }}>Total Amount:</b>{" "}
                         <b>₹{totalAmount}/-</b>
                       </p>
@@ -77,8 +75,7 @@ function BuyNow() {
                         style={{ textDecoration: "none", color: "white" }}
                       >
                         <button
-                          className="btn btn-primary"
-                          style={{ padding: "0.2rem 5rem" }}
+                          className="btn btn-primary place-order-btn"
                         >
                           Place Order
                         </button>
@@ -89,7 +86,7 @@ function BuyNow() {
               </div>
             </div>
             <div
-              className="col-4"
+              className="col-lg-4 hide"
               style={{ marginLeft: "-100px" }}
             >
               <img

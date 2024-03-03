@@ -17,7 +17,6 @@ function NavComp() {
   }, []);
 
   useEffect(() => {
-    // Use useEffect to ensure the code runs after component mount
 
     // Place your existing JavaScript code here
     const openAccountBtn = document.getElementById("openAccountBtn");
@@ -148,7 +147,7 @@ function NavComp() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light nav-collapse-width">
           <img
             className="qumash-logo"
-            src={require(`./Navbar images/qumash logo.png`)}
+            src={require(`./Navbar images/Her_s_wish.png`)}
             alt="logo"
           />
           <button

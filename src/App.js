@@ -39,11 +39,9 @@ function App() {
           <Route path="/confirmed" element={<OrderConfirmed/>}></Route>
           <Route path="/buynow/:id" element={<BuyNow/>}></Route>
          
-          {/* <Route exact path="/products" element={<Sp/>} /> */}
         </Routes>
         <HomeFooter/>
       </BrowserRouter>
-      {/* <SingleProduct/> */}
     </div>
   );
 }

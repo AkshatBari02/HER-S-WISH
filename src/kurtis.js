@@ -1,11 +1,11 @@
+import Data from "./allProductDetails";
 import CardLayout from "./card-layout";
-import kurtisData from "./kurtisData";
-import SingleProduct from "./singleProductLayout";
 
 function Kurtis() {
+  const filteredData = Data.filter(item => item.id.includes("kurti"));
   return (
-    <div style={{ paddingTop: "120px", backgroundColor: "#f9efdf" }}>
-      <CardLayout data={kurtisData} />
+    <div className="single-category-section">
+      <CardLayout data={filteredData} />
     </div>
   );
 }

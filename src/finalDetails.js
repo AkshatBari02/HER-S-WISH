@@ -19,10 +19,10 @@ function ConfirmOrderForm() {
     <>
         <div className="container finaldetails-container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
               <div className="finaldetails-content">
-                <h2>Confirm Order</h2><br/>
-                <form style={{ width: "50%" }}>
+                <h2 className="confirm-order-head">Confirm Order</h2><br/>
+                <form className="left-box">
                   <div class="mb-3">
                     <label for="name" className="form-label">
                       Name
@@ -47,15 +47,15 @@ function ConfirmOrderForm() {
                     />
                   </div>
                   <Link to={!isButtonDisabled ? "/confirmed":""}style={{textDecoration:"none",color:"white"}} >
-                  <button type="submit" class="btn btn-primary" disabled={isButtonDisabled}>
+                  <button type="submit" class="btn btn-primary confirm-order-btn" disabled={isButtonDisabled}>
                   Confirm Order!
                   </button>
                   </Link>
                 </form>
               </div>
             </div>
-            <div className="col-6">
-              <div style={{marginLeft:"-141px"}}>
+            <div className="col-lg-6 hide">
+              <div>
                 <img
                   src={require(`./additional images/confirmOrder.jpg`)}
                   alt=""

@@ -121,7 +121,7 @@ function HomeFooter(){
 {/* <!-- Copyright --> */}
 <div class="text-center p-4">
   © 2023 Copyright:
-  <a class="text-reset fw-bold" href="">Her_s_wish 2023. All rights reserved.</a>
+  <a class="text-reset fw-bold" href="https://her-s-wish.onrender.com">Her_s_wish 2023. All rights reserved.</a>
 </div>
 {/* <!-- Copyright --> */}
 </footer>

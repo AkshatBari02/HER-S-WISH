@@ -47,10 +47,10 @@ function HomeFooter(){
       <div class="col-md-3 col-lg-4 col-xl-3 col-sm-2 mx-auto mb-4">
         {/* <!-- Content --> */}
         <h6 class="text-uppercase fw-bold mb-4">
-          <i class="fas fa-gem me-3"></i>Qumash World
+          <i class="fas fa-gem me-3"></i>HER'S WISH
         </h6>
         <p>
-          Qumash is a marketplace of unique designs from across the globe. Our vision is to bring the world a little closer and make all discover worthy products, discoverable and within your reach. We are a group of passionate & energetic people working to make that vision a reality
+        HER'S WISH is a marketplace of unique designs from across the globe. Our vision is to bring the world a little closer and make all discover worthy products, discoverable and within your reach. We are a group of passionate & energetic people working to make that vision a reality
         </p>
       </div>
       {/* <!-- Grid column --> */}
@@ -102,14 +102,14 @@ function HomeFooter(){
         {/* <!-- Links --> */}
         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
         <p>
-          <i class="fas fa-home me-3"></i>69, Sharma Building,M.I Road Jaipur,302001
+          <i class="fas fa-home me-3"></i>123 Main Street Anytown,Jaipur,302001
         </p>
         <p>
           <i class="fas fa-envelope me-3"></i>
-          askme@qumashworld.com
+          itsherswish@gmail.com
         </p>
-        <p><i class="fas fa-phone me-3"></i>+91-9929394880</p>
-        <p><i class="fas fa-print me-3"></i>0141-4019492</p>
+        <p><i class="fas fa-phone me-3"></i>+91-9988776655</p>
+        <p><i class="fas fa-print me-3"></i>0141-0123456</p>
       </div>
       {/* <!-- Grid column --> */}
     </div>
@@ -120,8 +120,8 @@ function HomeFooter(){
 
 {/* <!-- Copyright --> */}
 <div class="text-center p-4">
-  © 2021 Copyright:
-  <a class="text-reset fw-bold" href="https://qumashworld.com/">Qumash 2022. All rights reserved.</a>
+  © 2023 Copyright:
+  <a class="text-reset fw-bold" href="https://qumashworld.com/">Her_s_wish 2023. All rights reserved.</a>
 </div>
 {/* <!-- Copyright --> */}
 </footer>

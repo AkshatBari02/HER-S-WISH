@@ -18,7 +18,6 @@ function NavComp() {
 
   useEffect(() => {
 
-    // Place your existing JavaScript code here
     const openAccountBtn = document.getElementById("openAccountBtn");
     const account = document.getElementById("account");
     const createAccount = document.getElementById("createAccount");
@@ -64,10 +63,6 @@ function NavComp() {
 
     const staticUsers = [
       { username: "akshat123@gmail.com", password: "dev123akshat" },
-      { username: "abdul14@gmail.com", password: "qumash14" },
-      { username: "rohan20@gmail.com", password: "ro011" },
-      { username: "nitin11@gmail.com", password: "Nitin@11" },
-      { username: "sunita12@gmail.com", password: "Sunita@12" },
       // Add more user objects as needed
     ];
 
@@ -80,6 +75,7 @@ function NavComp() {
       );
       if (user) {
         setLoading(true);
+        setnotLoggedIn(false);
 
         // Simulate loading for 5 seconds
         setTimeout(() => {
@@ -91,8 +87,6 @@ function NavComp() {
         }, 3000);
         // Successful login
         console.log("check");
-
-        // Here you can redirect the user or perform other action
       } else {
         setnotLoggedIn(true);
         setLoggedIn(false);
@@ -100,6 +94,40 @@ function NavComp() {
         console.log("Invalid credentials");
         // Handle form submission logic here
       }
+    });
+
+    document.querySelector('button[type="createAcc"]').addEventListener("click", function (event)  {
+      event.preventDefault(); // Prevent the default form submission
+    
+      // Get the input values
+      const email = document.querySelector('input[name="signupEmail"]').value;
+      const password = document.querySelector('input[name="signupPassword"]').value;
+      const confirmPassword = document.querySelector('input[name="confirmPassword"]').value;
+    
+      // Check if passwords match
+      if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+        return; // Exit the function if passwords don't match
+      }
+    
+      // Check if the email already exists in staticUsers array
+      const existingUser = staticUsers.find(user => user.username === email);
+      if (existingUser) {
+        alert("User already exists. Please use a different email.");
+        return; // Exit the function if user already exists
+      }
+    
+      // Create a new user object and push it to staticUsers array
+      const newUser = { username: email, password };
+      staticUsers.push(newUser);
+    
+      // Optionally, you can clear the form fields after successful submission
+      document.querySelector('input[name="signupEmail"]').value = "";
+      document.querySelector('input[name="signupPassword"]').value = "";
+      document.querySelector('input[name="confirmPassword"]').value = "";
+    
+      // Optionally, you can do something else after creating the account, such as showing a success message
+      alert("Account created successfully!");
     });
     
 
@@ -295,13 +323,13 @@ function NavComp() {
               />
               <input
                 type="password"
-                name="signupPassword"
+                name="confirmPassword"
                 placeholder="Confirm your password"
               />
               <div className={`hidden ${notLoggedIn ? "wrong-login" : ""}`}>
                 Incorrect username or password<br></br>
               </div>
-              <button type="submit" style={{ marginRight: "10px" }}>
+              <button type="createAcc" style={{ marginRight: "10px" }}>
                 Create Account
               </button>
               <button type="button" id="closeCreateAccountBtn">
